@@ -62,10 +62,10 @@ public class DialogContent extends MyMethods {
     private List<WebElement> deleteCountryButtonList;
 
     @FindBy(xpath = "(//input[@data-placeholder='Short Name'])[2]")
-    private WebElement citizenshipShortName;
+    private WebElement shortName;
 
     @FindBy(xpath = "(//input[@data-placeholder='Short Name'])[1]")
-    private WebElement citizenshipShortNameSearch;
+    private WebElement shortNameSearch;
 
     @FindBy(xpath = "//input[@data-placeholder='Integration Code']")
     private WebElement integrationCodeInput;
@@ -100,13 +100,53 @@ public class DialogContent extends MyMethods {
     @FindBy(xpath = "(//div[@role='tab'])[4]")
     private WebElement note;
 
+    @FindBy(xpath = "(//span[text()='Stage'])[4]")
+    private WebElement stageDropdownUnderDocumentTypes;
+
+    @FindBy(xpath = "(//span[text()='Stage'])[1]")
+    private WebElement stageForSearchDropDrownUnderDocumentTypes;
 
     @FindBy(css = "iframe[class='tox-edit-area__iframe']")
     private WebElement iFrame;
 
-
     @FindBy(xpath = "//tbody[@role='rowgroup']/tr/td[2]")
     private List<WebElement> statesList;
+
+    @FindBy(xpath = "//mat-slide-toggle[@class='mat-slide-toggle mat-accent mat-checked ng-star-inserted']")
+    private List<WebElement> humanResourcesActivatorButtons;
+
+    @FindBy(xpath ="//input[@id='ms-text-field-1']")
+    private  WebElement   integrationCodeInputBtn;
+
+    @FindBy(xpath = "//tbody/tr[1]/td[3]/div[1]/ms-edit-button[1]/button[1]/span[1]/fa-icon[1]/*[1]")
+    private WebElement editButton;
+
+    @FindBy(xpath = "//div[@id='mat-select-value-5']")
+    private WebElement fieldDropDown;
+
+    public WebElement getFieldDropDown() {
+        return fieldDropDown;
+    }
+
+    public WebElement getStageForSearchDropDrownUnderDocumentTypes() {
+        return stageForSearchDropDrownUnderDocumentTypes;
+    }
+
+    public WebElement getStageDropdownUnderDocumentTypes() {
+        return stageDropdownUnderDocumentTypes;
+    }
+
+    public WebElement getEditButton() {
+        return editButton;
+    }
+
+    public List<WebElement> getHumanResourcesActivatorButtons() {
+        return humanResourcesActivatorButtons;
+    }
+
+    public WebElement getIntegrationCodeInputBtn() {
+        return integrationCodeInputBtn;
+    }
 
     public List<WebElement> getStatesList() {
         return statesList;
@@ -161,11 +201,11 @@ public class DialogContent extends MyMethods {
     }
 
     public WebElement getCitizenshipShortNameSearch() {
-        return citizenshipShortNameSearch;
+        return shortNameSearch;
     }
 
     public WebElement getCitizenshipShortName() {
-        return citizenshipShortName;
+        return shortName;
     }
 
     public WebElement getNameSearch() {
