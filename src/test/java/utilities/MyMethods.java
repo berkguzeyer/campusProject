@@ -7,6 +7,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 
 import java.time.Duration;
+import java.util.List;
 
 public class MyMethods {
 
@@ -39,6 +40,22 @@ public class MyMethods {
         waitUntilVisible(element);
         Assert.assertTrue(element.getText().contains(text));
 
+    }
+    public void verifyContainsTextInList(List<WebElement> list, String text){
+        try {
+            Thread.sleep(3000);
+        } catch (InterruptedException e) {
+            throw new RuntimeException(e);
+        }
+        Assert.assertEquals(list.get(0).getText(), text);
+    }
+    public void verifyNotContainsTextInList(List<WebElement> list, String text){
+        try {
+            Thread.sleep(3000);
+        } catch (InterruptedException e) {
+            throw new RuntimeException(e);
+        }
+        Assert.assertNotEquals(list.get(0).getText(), text);
     }
 
 
