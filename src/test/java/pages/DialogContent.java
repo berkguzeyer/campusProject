@@ -118,7 +118,7 @@ public class DialogContent extends MyMethods {
     @FindBy(xpath ="//input[@id='ms-text-field-1']")
     private  WebElement   integrationCodeInputBtn;
 
-    @FindBy(xpath = "//tbody/tr[1]/td[3]/div[1]/ms-edit-button[1]/button[1]/span[1]/fa-icon[1]/*[1]")
+    @FindBy(xpath = "//ms-edit-button[@table='true']")
     private WebElement editButton;
 
     @FindBy(xpath = "//div[@id='mat-select-value-5']")
