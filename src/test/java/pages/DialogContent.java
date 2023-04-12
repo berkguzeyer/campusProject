@@ -133,6 +133,9 @@ public class DialogContent extends MyMethods {
     @FindBy(xpath = "(//input[@data-placeholder='Integration Code'])[2]")
     private WebElement newDiscountIntegrationCodeInput;
 
+    @FindBy(xpath = "//ms-delete-button[@table='true']")
+    private WebElement deleteButtonOnAttestationPage;
+
     public WebElement getNewDiscountIntegrationCodeInput() {
         return newDiscountIntegrationCodeInput;
     }
@@ -291,5 +294,9 @@ public class DialogContent extends MyMethods {
 
     public WebElement getAcceptCookies() {
         return acceptCookies;
+    }
+
+    public WebElement getDeleteButtonOnAttestationPage() {
+        return deleteButtonOnAttestationPage;
     }
 }
