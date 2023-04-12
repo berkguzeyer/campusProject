@@ -62,7 +62,7 @@ public class DialogContent extends MyMethods {
     private List<WebElement> deleteCountryButtonList;
 
     @FindBy(xpath = "(//input[@data-placeholder='Short Name'])[2]")
-    private WebElement shortName;
+    private WebElement shortNameInput;
 
     @FindBy(xpath = "(//input[@data-placeholder='Short Name'])[1]")
     private WebElement shortNameSearch;
@@ -72,6 +72,9 @@ public class DialogContent extends MyMethods {
 
     @FindBy(xpath = "(//input[@data-placeholder='Priority'])[2]")
     private WebElement priorityInput;
+
+    @FindBy(xpath = "//input[@data-placeholder='Priority']")
+    private WebElement newDiscountPriorityInput;
 
     @FindBy(xpath = "(//input[@data-placeholder='Priority'])[1]")
     private WebElement prioritySearchInput;
@@ -123,6 +126,24 @@ public class DialogContent extends MyMethods {
 
     @FindBy(xpath = "//div[@id='mat-select-value-5']")
     private WebElement fieldDropDown;
+
+    @FindBy(xpath = "(//input[@data-placeholder='Description'])[2]")
+    private WebElement descriptionFormInput;
+
+    @FindBy(xpath = "(//input[@data-placeholder='Integration Code'])[2]")
+    private WebElement newDiscountIntegrationCodeInput;
+
+    public WebElement getNewDiscountIntegrationCodeInput() {
+        return newDiscountIntegrationCodeInput;
+    }
+
+    public WebElement getNewDiscountPriorityInput() {
+        return newDiscountPriorityInput;
+    }
+
+    public WebElement getDescriptionFormInput() {
+        return descriptionFormInput;
+    }
 
     public WebElement getFieldDropDown() {
         return fieldDropDown;
@@ -200,12 +221,12 @@ public class DialogContent extends MyMethods {
         return priorityInput;
     }
 
-    public WebElement getCitizenshipShortNameSearch() {
+    public WebElement getShortNameSearch() {
         return shortNameSearch;
     }
 
-    public WebElement getCitizenshipShortName() {
-        return shortName;
+    public WebElement getShortNameInput() {
+        return shortNameInput;
     }
 
     public WebElement getNameSearch() {

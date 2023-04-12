@@ -51,7 +51,7 @@ public class Navigation extends MyMethods { // always extend from "Pages" so you
     @FindBy(xpath = "(//span[text()='Locations'])[1]")
     private WebElement locationUnderSchoolSetup;
 
-    @FindBy (xpath = "(//*[text()='Positions'])[2]")
+    @FindBy (xpath = "//div[@class='children ng-tns-c111-18 ng-trigger ng-trigger-slideInOut ng-star-inserted']//a[@href='/employee-position']")
     private WebElement positionsUnderHumanResources;
 
     @FindBy(xpath = "//span[text()='Departments']")

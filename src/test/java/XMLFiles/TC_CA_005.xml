@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <test name="TC_CA_005">
+<!--  Coded by Berk G.  -->
+    <classes>
+        <class name="runners.TC_CA_005"></class>
+    </classes>
+    </test>
+</suite>
