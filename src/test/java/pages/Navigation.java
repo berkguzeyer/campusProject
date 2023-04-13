@@ -85,6 +85,12 @@ public class Navigation extends MyMethods { // always extend from "Pages" so you
     @FindBy(xpath = "//span[text()='Document Types']")
     private WebElement documentTypesButton;
 
+    @FindBy(xpath = "(//span[text()='Nationalities'])[1]")
+    private WebElement nationalitiesBtn;
+
+    public WebElement getNationalitiesBtn() {
+        return nationalitiesBtn;
+    }
 
     public WebElement getDocumentTypesButton() {
         return documentTypesButton;

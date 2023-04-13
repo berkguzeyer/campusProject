@@ -118,8 +118,8 @@ public class DialogContent extends MyMethods {
     @FindBy(xpath = "//mat-slide-toggle[@class='mat-slide-toggle mat-accent mat-checked ng-star-inserted']")
     private List<WebElement> humanResourcesActivatorButtons;
 
-    @FindBy(xpath ="//input[@id='ms-text-field-1']")
-    private  WebElement   integrationCodeInputBtn;
+    @FindBy(xpath = "//input[@id='ms-text-field-1']")
+    private WebElement integrationCodeInputBtn;
 
     @FindBy(xpath = "//ms-edit-button[@table='true']")
     private WebElement editButton;
@@ -135,6 +135,13 @@ public class DialogContent extends MyMethods {
 
     @FindBy(xpath = "//ms-delete-button[@table='true']")
     private WebElement deleteButtonOnAttestationPage;
+
+    @FindBy(xpath = "(//*[@role='cell'])[2]")
+    private WebElement cellInputField;
+
+    public WebElement getCellInputField() {
+        return cellInputField;
+    }
 
     public WebElement getNewDiscountIntegrationCodeInput() {
         return newDiscountIntegrationCodeInput;
