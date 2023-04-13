@@ -139,6 +139,27 @@ public class DialogContent extends MyMethods {
     @FindBy(xpath = "(//*[@role='cell'])[2]")
     private WebElement cellInputField;
 
+    @FindBy(xpath = "//span[@class='mat-option-text']")
+    private List<WebElement> stageDropDownOptions;
+
+    @FindBy(xpath = "//span[text()='IBAN']")
+    private WebElement iban;
+
+    @FindBy(xpath = "(//span[text()='Currency'])[3]")
+    private WebElement currency;
+
+    public List<WebElement> getStageDropDownOptions() {
+        return stageDropDownOptions;
+    }
+
+    public WebElement getIban() {
+        return iban;
+    }
+
+    public WebElement getCurrency() {
+        return currency;
+    }
+
     public WebElement getCellInputField() {
         return cellInputField;
     }
