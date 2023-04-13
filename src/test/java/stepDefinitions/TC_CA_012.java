@@ -17,6 +17,7 @@ public class TC_CA_012 {
 
     @Given("Add a new name")
     public void addANewName() {
+
         dc.clickMethod(dc.getAddButton());
         dc.sendKeysMethod(dc.getFormNameInput(),"Cat");
         dc.clickMethod(dc.getSaveButton());

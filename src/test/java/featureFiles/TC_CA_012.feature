@@ -1,4 +1,4 @@
-Feature: Nationalities under Parameters Setup Functionality
+Feature: Nationalities under Parameters Setup Functionality.
 
   Background:
     Given Navigate to Campus
