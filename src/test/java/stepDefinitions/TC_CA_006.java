@@ -16,30 +16,30 @@ public class TC_CA_006 {
     DialogContent dc= new DialogContent();
 
 
-    @Given("Navigate to Campus")
-    public void navigate_to_campus() {
-        DriverClass.getDriver().get("https://test.mersys.io/");
-        DriverClass.getDriver().manage().window().maximize();
-
-    }
-    @When("Enter username and password")
-    public void enter_username_and_password() {
-        dc.sendKeysMethod(dc.getLoginUsername(),"turkeyts");
-        dc.sendKeysMethod(dc.getLoginPassword(),"TechnoStudy123");
-
-    }
-    @When("Click on login Button")
-    public void click_on_login_button() {
-      dc.clickMethod(dc.getLoginButton());
-
-    }
-    @Then("User should login successfully")
-    public void user_should_login_successfully() {
-
-     dc.waitUntilVisible(dc.getDashboardText());
-        Assert.assertTrue(dc.getDashboardText().isDisplayed());
-
-    }
+//    @Given("Navigate to Campus")
+//    public void navigate_to_campus() {
+//        DriverClass.getDriver().get("https://test.mersys.io/");
+//        DriverClass.getDriver().manage().window().maximize();
+//
+//    }
+//    @When("Enter username and password")
+//    public void enter_username_and_password() {
+//        dc.sendKeysMethod(dc.getLoginUsername(),"turkeyts");
+//        dc.sendKeysMethod(dc.getLoginPassword(),"TechnoStudy123");
+//
+//    }
+//    @When("Click on login Button")
+//    public void click_on_login_button() {
+//      dc.clickMethod(dc.getLoginButton());
+//
+//    }
+//    @Then("User should login successfully")
+//    public void user_should_login_successfully() {
+//
+//     dc.waitUntilVisible(dc.getDashboardText());
+//        Assert.assertTrue(dc.getDashboardText().isDisplayed());
+//
+//    }
     @Then("Navigate to Education page")
     public void navigate_to_education_page() {
         nv.clickMethod(nv.getEducationBtn());
