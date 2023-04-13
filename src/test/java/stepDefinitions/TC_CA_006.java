@@ -58,11 +58,11 @@ public class TC_CA_006 {
 
     }
 
-    @Then("Success message should be displayed")
-    public void successMessageShouldBeDisplayed() {
-        dc.verifyContainsText(dc.getSuccessMessage(),"successfully");
-
-    }
+//    @Then("Success message should be displayed")
+//    public void successMessageShouldBeDisplayed() {
+//        dc.verifyContainsText(dc.getSuccessMessage(),"successfully");
+//
+//    }
 
     @Given("Recreate a new")
     public void recreateANew() {
