@@ -1,4 +1,4 @@
-Feature: Positions under Human Resources Setup
+Feature: Attestations under Human Resources Setup
 
 #  Coded by Belgin D. #
 
@@ -13,15 +13,25 @@ Feature: Positions under Human Resources Setup
     And Click on add button
     And Enter name in the form
     When Click on save button
-    Then First name on the list should match with the credentials
+    Then Success message should be displayed
 
-  Scenario: Edit Attestations under Human Resources Setup
+  Scenario Outline: Edit Attestations under Human Resources Setup
+    When Enter the name as "<Name>" on the search box
+    And Click on search button
     And Click on edit button
     And Change the name
     When Click on save button
-    Then First name on the list should be changed with new credentials
+    Then Success message should be displayed
+    Examples:
+      | Name  |
+      | Emily |
 
-  Scenario: Delete Attestations under Human Resources Setup
+  Scenario Outline: Delete Attestations under Human Resources Setup
+    When Enter the name as "<Name>" on the search box
+    And Click on search button
     And Click on Delete button
     And Click on delete confirm button
-    Then First name of the list should not be the same
+    Then Success message should be displayed
+    Examples:
+      | Name |
+      | Mary |
