@@ -13,6 +13,19 @@ Feature:Human Resources
     And Enter Name to New Position Category field
       | lucky |
     And Click on save button
-    Then Name should be displayed after adding
+    Then Success message should be displayed
 
+  Scenario: Validate the edit button on positions categories page from Human Resources
+    Given Navigate to position categories from human resources
+    And Click on edit button
+    And Change the name with new one
+    And Click on save button
+    Then Success message should be displayed
+
+
+Scenario: Validate the delete button on positions categories page from Human Resources
+Given Navigate to position categories from human resources
+  And Click on delete button
+  And Click on delete confirm button
+  Then Success message should be displayed
 
