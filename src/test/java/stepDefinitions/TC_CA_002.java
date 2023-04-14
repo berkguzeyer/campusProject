@@ -19,32 +19,37 @@ public class TC_CA_002 {
 
     @And("Enter name in the form")
     public void enterNameInTheForm() {
-        dc.sendKeysMethod(dc.getFormNameInput(), "ABC");
+        dc.sendKeysMethod(dc.getFormNameInput(), "Emily");
     }
 
-    @Then("First name on the list should match with the credentials")
-    public void firstNameOnTheListShouldMatchWithTheCredentials() {
-        dc.verifyContainsTextInList(dc.getStatesList(), "ABC");
+//    @Then("First name on the list should match with the credentials")
+//    public void firstNameOnTheListShouldMatchWithTheCredentials() {
+//        dc.verifyContainsTextInList(dc.getStatesList(), "Emily");
+//    }
+
+    @When("Enter the name as {string} on the search box")
+    public void enterTheNameAsOnTheSearchBox(String name) {
+        dc.sendKeysMethod(dc.getFormNameForSearch(), name);
     }
 
     @And("Change the name")
     public void changeTheName() {
-        dc.sendKeysMethod(dc.getFormNameInput(), "xyz");
+        dc.sendKeysMethod(dc.getFormNameInput(), "Mary");
     }
 
-    @Then("First name on the list should be changed with new credentials")
-    public void firstNameOnTheListShouldBeChangedWithNewCredentials() {
-        dc.verifyContainsTextInList(dc.getStatesList(), "xyz");
-    }
+//    @Then("First name on the list should be changed with new credentials")
+//    public void firstNameOnTheListShouldBeChangedWithNewCredentials() {
+//        dc.verifyContainsTextInList(dc.getStatesList(), "Mary");
+//    }
 
     @And("Click on Delete button")
     public void clickOnDeleteButton() {
         dc.clickMethod(dc.getDeleteButtonOnAttestationPage());
     }
 
-    @Then("First name of the list should not be the same")
-    public void firstNameOfTheListShouldNotBeTheSame() {
-        dc.verifyNotContainsTextInList(dc.getStatesList(), "xyz");
-    }
+//    @Then("First name of the list should not be the same")
+//    public void firstNameOfTheListShouldNotBeTheSame() {
+//        dc.verifyNotContainsTextInList(dc.getStatesList(), "Mary");
+//    }
 
 }

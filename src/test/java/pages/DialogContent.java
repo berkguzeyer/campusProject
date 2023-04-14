@@ -118,6 +118,9 @@ public class DialogContent extends MyMethods {
     @FindBy(xpath = "//mat-slide-toggle[@class='mat-slide-toggle mat-accent mat-checked ng-star-inserted']")
     private List<WebElement> humanResourcesActivatorButtons;
 
+    @FindBy(xpath = "//mat-slide-toggle[@class='mat-slide-toggle mat-accent mat-checked mat-disabled ng-star-inserted']")
+    private List<WebElement> departmentsUnderSchoolSetupActivatorButtons;
+
     @FindBy(xpath = "//input[@id='ms-text-field-1']")
     private WebElement integrationCodeInputBtn;
 
@@ -363,5 +366,9 @@ public class DialogContent extends MyMethods {
 
     public WebElement getDeleteButtonOnAttestationPage() {
         return deleteButtonOnAttestationPage;
+    }
+
+    public List<WebElement> getDepartmentsUnderSchoolSetupActivatorButtons() {
+        return departmentsUnderSchoolSetupActivatorButtons;
     }
 }
