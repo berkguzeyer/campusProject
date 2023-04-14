@@ -148,6 +148,29 @@ public class DialogContent extends MyMethods {
     @FindBy(xpath = "(//span[text()='Currency'])[3]")
     private WebElement currency;
 
+
+    @FindBy(xpath = "//input[@data-placeholder='Name']")
+    private WebElement formNameForSearch;
+
+
+    @FindBy(xpath = "(//span[text()='Stage'])[3]")
+    private WebElement stageForEditDropDrownUnderDocumentTypes;
+
+    @FindBy(xpath = "/html/body/div[3]/div[3]")
+    private WebElement background;
+
+    public WebElement getFormNameForSearch() {
+        return formNameForSearch;
+    }
+
+    public WebElement getStageForEditDropDrownUnderDocumentTypes() {
+        return stageForEditDropDrownUnderDocumentTypes;
+    }
+
+    public WebElement getBackground() {
+        return background;
+    }
+
     public List<WebElement> getStageDropDownOptions() {
         return stageDropDownOptions;
     }
