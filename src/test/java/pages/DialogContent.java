@@ -159,6 +159,20 @@ public class DialogContent extends MyMethods {
     @FindBy(xpath = "/html/body/div[3]/div[3]")
     private WebElement background;
 
+    @FindBy(xpath = "//*[text()='Classroom']")
+    private WebElement classRoomDropDown;
+
+    @FindBy(xpath = "//input[@data-placeholder='Capacity']")
+    private WebElement capacityInput;
+
+    public WebElement getClassRoomDropDown() {
+        return classRoomDropDown;
+    }
+
+    public WebElement getCapacityInput() {
+        return capacityInput;
+    }
+
     public WebElement getFormNameForSearch() {
         return formNameForSearch;
     }
