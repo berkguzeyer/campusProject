@@ -168,6 +168,12 @@ public class DialogContent extends MyMethods {
     @FindBy(xpath = "//input[@data-placeholder='Capacity']")
     private WebElement capacityInput;
 
+    @FindBy(xpath = "//tbody/tr[1]/td[5]/div[1]/ms-edit-button[1]/button[1]/span[1]/fa-icon[1]/*[1]")
+    private WebElement fieldsEditButton;
+
+    @FindBy(xpath = "//tbody/tr[1]/td[5]/div[1]/ms-delete-button[1]/button[1]/span[1]/fa-icon[1]/*[1]")
+    private WebElement fieldsDeleteButton;
+
     public WebElement getClassRoomDropDown() {
         return classRoomDropDown;
     }
@@ -370,5 +376,13 @@ public class DialogContent extends MyMethods {
 
     public List<WebElement> getDepartmentsUnderSchoolSetupActivatorButtons() {
         return departmentsUnderSchoolSetupActivatorButtons;
+    }
+
+    public WebElement getFieldsEditButton() {
+        return fieldsEditButton;
+    }
+
+    public WebElement getFieldsDeleteButton() {
+        return fieldsDeleteButton;
     }
 }
