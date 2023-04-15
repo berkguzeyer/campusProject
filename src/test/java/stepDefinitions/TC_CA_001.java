@@ -34,13 +34,12 @@ public class TC_CA_001 {
         dc.sendKeysMethod(dc.getFormNameInput(),element.get(0));
     }
 
-    @Then("Name should be displayed after adding")
-    public void nameShouldBeDisplayedAfterAdding() {
-        try {
-            Thread.sleep(2000);
-        } catch (InterruptedException e) {
-            throw new RuntimeException(e);
-        }
-        dc.verifyContainsText(dc.getCellInputField(), "lucky");
+
+    @And("Change the name with new one")
+    public void changeTheNameWithNewOne() {
+        dc.getFormNameInput().clear();
+        dc.sendKeysMethod(dc.getFormNameInput(),"Luckiest");
     }
+
+
 }
