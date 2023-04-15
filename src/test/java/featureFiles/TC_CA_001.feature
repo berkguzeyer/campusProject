@@ -14,6 +14,7 @@ Feature:Human Resources
       | lucky |
     And Click on save button
     Then Success message should be displayed
+    Then
 
   Scenario: Validate the edit button on positions categories page from Human Resources
     Given Navigate to position categories from human resources
