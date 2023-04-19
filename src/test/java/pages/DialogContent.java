@@ -174,6 +174,14 @@ public class DialogContent extends MyMethods {
     @FindBy(xpath = "//tbody/tr[1]/td[5]/div[1]/ms-delete-button[1]/button[1]/span[1]/fa-icon[1]/*[1]")
     private WebElement fieldsDeleteButton;
 
+    @FindBy(xpath = "/html/body/hot-toast-container/div/div/hot-toast/div/div/div[2]/div/dynamic-view/div")
+    private WebElement unsuccessfulMessage;
+
+    public WebElement getUnsuccessfulMessage() {
+        return unsuccessfulMessage;
+    }
+
+
     public WebElement getClassRoomDropDown() {
         return classRoomDropDown;
     }
