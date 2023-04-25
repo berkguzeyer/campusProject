@@ -151,10 +151,8 @@ public class DialogContent extends MyMethods {
     @FindBy(xpath = "(//span[text()='Currency'])[3]")
     private WebElement currency;
 
-
     @FindBy(xpath = "//input[@data-placeholder='Name']")
     private WebElement formNameForSearch;
-
 
     @FindBy(xpath = "(//span[text()='Stage'])[3]")
     private WebElement stageForEditDropDrownUnderDocumentTypes;
@@ -176,6 +174,24 @@ public class DialogContent extends MyMethods {
 
     @FindBy(xpath = "/html/body/hot-toast-container/div/div/hot-toast/div/div/div[2]/div/dynamic-view/div")
     private WebElement unsuccessfulMessage;
+
+    @FindBy(xpath = "//span[text()=' HanukaMA ']")
+    private WebElement nextGradeToSelect;
+
+    @FindBy(xpath = "//input[@data-placeholder='Name']")
+    private WebElement gradeLevelAddFormNameInput;
+
+    @FindBy(xpath = "//ms-text-field[@formcontrolname='order']//input[@type='number']")
+    private WebElement orderInputField;
+
+    @FindBy(xpath = "//button[contains(@class, 'mat-icon-button') and @color='accent']")
+    private WebElement gradeLevelEditButton;
+
+    @FindBy(xpath = "//button[contains(@class,'mat-icon-button') and contains(@class,'mat-warn')]")
+    private WebElement gradeLevelDeleteButton;
+
+    @FindBy(xpath = "//button[@mat-dialog-close and @class='mat-focus-indicator mat-button mat-raised-button mat-button-base']")
+    private WebElement gradeLevelDeleteCancelButton;
 
     public WebElement getUnsuccessfulMessage() {
         return unsuccessfulMessage;
@@ -392,5 +408,29 @@ public class DialogContent extends MyMethods {
 
     public WebElement getFieldsDeleteButton() {
         return fieldsDeleteButton;
+    }
+
+    public WebElement getNextGradeToSelect() {
+        return nextGradeToSelect;
+    }
+
+    public WebElement getGradeLevelAddFormNameInput() {
+        return gradeLevelAddFormNameInput;
+    }
+
+    public WebElement getOrderInputField() {
+        return orderInputField;
+    }
+
+    public WebElement getGradeLevelEditButton() {
+        return gradeLevelEditButton;
+    }
+
+    public WebElement getGradeLevelDeleteButton() {
+        return gradeLevelDeleteButton;
+    }
+
+    public WebElement getGradeLevelDeleteCancelButton() {
+        return gradeLevelDeleteCancelButton;
     }
 }
