@@ -8,7 +8,7 @@ Feature: Departments under School Setup
     And Click on Login Button
     Then User should login successfully
     When Navigate to Departments under School Setup
-
+  @Regression
   Scenario Outline: Add Departments under School Setup
     And Click on add button
     And Enter name as "<Name>" and code as "<Code>"
@@ -17,7 +17,7 @@ Feature: Departments under School Setup
     Examples:
       | Name | Code |
       | Math | 202  |
-
+  @Regression
   Scenario Outline: Edit Departments under School Setup
     And Click on edit button
     And Enter name as "<Name>" and code as "<Code>"
@@ -26,7 +26,7 @@ Feature: Departments under School Setup
     Examples:
       | Name | Code |
       | Sci  | 201  |
-
+  @Regression
   Scenario: Delete Departments under School Setup
     And Click on delete button
     When Click on delete confirm button
