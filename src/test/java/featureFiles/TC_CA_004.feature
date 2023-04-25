@@ -6,13 +6,13 @@ Feature: Fields under Parameters Setup
     And Click on Login Button
     Then User should login successfully
     When Navigate to fields under parameters setup
-
+  @Regression
   Scenario: Add Fields under Parameters Setup
     And Click on Add button
     And Enter name "Jack Nicholson" and code "JN"
     When Click on save button
     Then Success message should be displayed
-
+  @Regression
   Scenario: Edit Fields under Parameters Setup
     When Enter the name as "Jack Nicholson" on the search box
     And Enter the code as "JN" on the search box
@@ -21,7 +21,7 @@ Feature: Fields under Parameters Setup
     And Enter name "David Nicholson" and code "DN"
     When Click on save button
     Then Success message should be displayed
-
+  @Regression
   Scenario: Delete Fields under Parameters Setup
     When Enter the name as "David Nicholson" on the search box
     And Enter the code as "DN" on the search box

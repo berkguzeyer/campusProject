@@ -8,7 +8,7 @@ Feature:School Locations
     Given Click on setup button
     When Click on school Setup button
     And Click on locations button
-
+  @Regression
   Scenario: Validate the add button on School Locations
     And Click on Add button
     And Enter Name and short name
@@ -19,13 +19,13 @@ Feature:School Locations
       | 10 |
     Then Click on save button
     Then Success message should be displayed
-
+  @Regression
   Scenario:Validate the edit button on School Locations
     And Click on edit button
     And Change the name with new location
     And Click on save button
     Then Success message should be displayed
-
+  @Regression
   Scenario: Validate the delete button on School Locations
     And Click on delete button
     And Click on delete confirm button

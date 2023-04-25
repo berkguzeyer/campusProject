@@ -8,13 +8,13 @@ Feature: Attestations under Human Resources Setup
     And Click on Login Button
     Then User should login successfully
     When Navigate to attestations under human resources
-
+  @Regression
   Scenario: Add Attestations under Human Resources Setup
     And Click on add button
     And Enter name in the form
     When Click on save button
     Then Success message should be displayed
-
+  @Regression
   Scenario Outline: Edit Attestations under Human Resources Setup
     When Enter the name as "<Name>" on the search box
     And Click on search button
@@ -25,7 +25,7 @@ Feature: Attestations under Human Resources Setup
     Examples:
       | Name  |
       | Emily |
-
+  @Regression
   Scenario Outline: Delete Attestations under Human Resources Setup
     When Enter the name as "<Name>" on the search box
     And Click on search button

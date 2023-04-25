@@ -8,7 +8,7 @@ Feature: Discounts under Parameters Setup
     And Click on Login Button
     Then User should login successfully
     When Navigate to discounts under parameters setup
-
+  @Regression
   Scenario: Add Discounts under Human Resources Setup
     And Click on add button
     And Fill new discount form
@@ -17,14 +17,14 @@ Feature: Discounts under Parameters Setup
       | 125     |
     When Click on save button
     Then Success message should be displayed
-
+  @Regression
   Scenario: Edit Discounts under Human Resources Setup
     And Click on edit button
     When Change the description
     And Click on save button
     Then Success message should be displayed
 
-
+  @Regression
   Scenario: Delete Discounts under Human Resources Setup
     And Click on delete button
     And Click on delete confirm button
